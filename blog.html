@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - Bar One (Blog)</title>
+</head>
+
+<body>
+    <!-- top nav + h2 -->
+    <header class="contactHeader">
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="logo">Bar-One</li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="headerTextContainer">
+                <h2>Blog</h2>
+            </div> <!-- .headerTextContainer END -->
+        </div> <!-- .wrapper END -->
+    </header>
+
+    <!-- sidebar -->
+    <section class="sidebar" id="sidebar">
+        <div class="wrapper">
+            <img src="./assets/sidebar-image.jpg" alt="beer glass being filled at the tap">
+            <h3>Our mission</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas praesentium quidem nobis.<br><a href="">Find out more.</a></p>
+            <h3>Recent Posts</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit</li>
+                <li>Lorem ipsum dolor sit</li>
+                <li>Lorem ipsum dolor sit</li>
+                <li>Lorem ipsum dolor sit</li>
+            </ul>
+        </div> <!-- .wrapper END -->
+    </section>
+
+    <!-- blog post -->
+    <section class="blogPost" id="blogPost">
+        <div class="wrapper">
+            <img src="./assets/post-image.jpg" alt="dinner spread">
+            <div class="blogPostTextContainer">
+                <h3>New Menu!</h3>
+                <p class="date">Monday January, 2023 by Saron</p>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, repellendus magnam vel odit quidem harum facilis fugiat nihil corrupti illum optio recusandae vitae ex exercitationem consequatur, eum rerum, iure accusantium?
+                Aperiam, earum. Non corporis nihil similique ipsa rerum quas ipsum, qui deleniti, ex quia nisi odio? Esse, dolorem soluta tenetur repellat eius harum minima molestiae debitis omnis sequi magni quaerat.
+                Enim eveniet mollitia natus ipsum? Blanditiis inventore amet consequatur quos possimus ullam fugit, tempora doloremque nulla explicabo nemo quia, labore facilis nam aspernatur reprehenderit provident, esse fuga exercitationem impedit. Consequuntur.
+                Perferendis minima quod maiores, deserunt atque ex, tenetur neque est adipisci ipsa expedita at repudiandae rem voluptatibus pariatur saepe blanditiis similique aperiam dignissimos amet modi dicta magni. Quia, hic maxime.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- comments section -->
+    <section class="comments" id="comments">
+       <div class="wrapper">
+            <h3>Comments:</h3>
+            <div class="commentsFlex">
+                <div class="commentsBox">
+                    <img src="./assets/comment-image-1.jpg" alt="icon of woman">
+                    <div class="comentsBoxTextContainer">
+                        <h4>Tuesday February 24, 2023 by Sulaire</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum velit fuga, ullam quaerat et doloribus quas repellendus sapiente veritatis!</p>
+                    </div>
+                </div>
+
+                <div class="commentsBox">
+                    <img src="./assets/comment-image-2.jpg" alt="icon of man">
+                    <div class="comentsBoxTextContainer">
+                        <h4>Wednesday March 10, 2023 by Renzo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum velit fuga, ullam quaerat et doloribus quas repellendus sapiente veritatis!</p>
+                    </div>
+                </div>
+            </div> <!-- .commentsFlex END -->
+
+            <form action="" class="blogForm" name="blogForm">
+            
+                <label for="name" class="sr-only"></label>
+                <input type="text" id="name" placeholder="Name">
+            
+                <label for="email" class="sr-only"></label>
+                <input type="email" id="email" placeholder="Email">
+            
+                <label for="message" class="sr-only"></label>
+                <textarea name="message" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+            
+                <button type="submit">Post Comment</button>
+            </form> <!-- .blogForm END -->
+       </div> <!-- .wrapper END -->
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="wrapper">
+            <p>Copyright © 2022 Juno College</p>
+        </div> <!-- .wrapper END -->
+    </footer>
+</body>
+</html>
