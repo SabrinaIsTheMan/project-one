@@ -1,0 +1,35 @@
+body {
+    font-family: $bodyFont;
+    font-weight: 700;
+    color: $white;
+}
+
+h1 {
+    font-family: $logoFont;
+    color: $color2;
+    font-size: 261.4px;
+}
+
+h2{
+    font-size: 83.2px;
+}
+
+h3 {
+    font-size: 68px;
+}
+
+h4 {
+    font-size: 30px;
+    color: $color2;
+}
+
+p {
+    font-weight: 400;
+    color: $white;
+    font-size: 39px;
+}
+
+header nav{
+    font-size: 38px;
+}
+
