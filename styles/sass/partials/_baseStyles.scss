@@ -1,4 +1,5 @@
 html{
+   font-size: 125%;
    background: $black;
 }
 
@@ -15,14 +16,31 @@ img{
 }
 
 ul, li{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+   margin: 0;
+   padding: 0;
+   list-style: none;
 }
 
 a{
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-   transition: 0.3s;
+   text-decoration: none;
+   color: inherit;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+.skipLink {
+   font-size: 1rem;
+   padding: 10px;
+   background: $white;
+   color: $black;
+   position: absolute;
+   top: 0;
+   z-index: 30;
+   text-align: center;
+   width: 100%;
+   left: -100%;
+}
+
+.skipLink:focus {
+   left: 0;
 }
