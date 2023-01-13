@@ -411,3 +411,14 @@ header nav a:focus {
   background: url(../assets/contact-header-1.jpg);
   height: 100vh;
 }
+
+footer {
+  background: #222222;
+  color: #FFFFFF;
+  height: 5vh;
+}
+footer p {
+  margin-bottom: 0;
+  font-size: 30px;
+  text-align: center;
+}
