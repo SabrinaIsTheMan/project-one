@@ -1,0 +1,139 @@
+// BUTTONS
+
+.button {
+    margin: 50px 0;
+
+    a{
+        font-family: $logoFont;
+        font-size: 30px;
+        background: $color3;
+        padding: 10px 40px;
+        margin: 20px 0;
+    }
+}
+
+// ABOUT SECTION
+    // TO DO - ICONS
+
+.about {
+    height: 80vh;
+
+    .aboutFlex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10vh 0;
+    }
+
+    .aboutFlexContent{
+        width: 30vw;
+        padding: 20px 0;
+    }
+}
+
+// PLAN AHEAD SECTION
+        // TO DO - IMAGES
+
+.planAhead {
+    height: 100vh;
+    background: $color1;
+
+    .planAheadFlex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15vh 0;
+    }
+
+    .planAheadFlexContent{
+        width: 30vw;
+        height: 40vh;
+    }
+    
+    .planAheadFlexContent2{
+        text-align: right;
+    }
+
+    .planAheadFlexImg{
+        width: 30vw;
+    }
+
+    .planAheadFlexImg1 {
+        box-shadow: 20px 20px $color2;
+    }
+
+    .planAheadFlexImg2 {
+        box-shadow: -20px 20px $color2;
+    }
+}
+
+// PARTY SECTION
+
+.party1{
+    height: 55vh;
+    
+    .wrapper{
+        width: 60%;
+        padding: 10vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            color: $color2;
+        }
+
+        p{
+            text-align: justify;
+        }
+    }
+}
+
+.party2{
+    height: 55vh;
+    background: url(../assets/banner-image.jpg);
+}
+
+// EVENTS SECTION
+
+.events{
+    height: 55vh;
+
+    .wrapper{
+        padding: 10vh 0;
+        display: flex;
+
+        img{
+            box-shadow: -20px 20px $color2;
+        }
+
+        .eventsTextContainer{
+            padding-left: 5vw;
+            
+            h3 {
+                    color: $color2;
+                }
+        }
+    }
+}
+
+// GALLERY SECTION
+
+.gallery{
+    height: 60vh;
+    background: $color1;
+
+    .galleryFlex{
+        padding: 10vh 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+           width: 40vh;
+        }
+    }
+}

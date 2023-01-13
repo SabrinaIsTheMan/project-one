@@ -305,12 +305,14 @@ h3 {
   line-height: 58px;
   letter-spacing: 2.2px;
   font-weight: 700;
+  margin: 10px 0;
 }
 
 h4 {
   color: #FF8327;
   font-size: 30px;
   font-weight: 700;
+  margin: 10px 0;
 }
 
 p {
@@ -318,18 +320,28 @@ p {
   font-size: 39px;
   line-height: 30px;
   letter-spacing: 1.9px;
+  margin: 0;
 }
 
-header nav {
-  width: 100%;
-  height: 10vh;
+nav {
   font-size: 38px;
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 100;
-  background: #111010;
+  background: black;
+  border-bottom: solid 5px #BF2603;
 }
-header ul {
+nav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 0;
+}
+nav ul {
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,10 +353,10 @@ header ul {
       -ms-flex-align: center;
           align-items: center;
 }
-header ul li {
+nav ul li {
   text-transform: uppercase;
 }
-header ul li:nth-child(3) {
+nav ul li:nth-child(3) {
   font-family: "Tulpen One", cursive;
   font-size: 60px;
   text-transform: none;
@@ -359,7 +371,7 @@ header nav a:focus {
 
 .indexHeader {
   background: url(../assets/home-image-1.jpg);
-  height: 100vh;
+  height: 90vh;
 }
 .indexHeader .titleContainer {
   display: -webkit-box;
@@ -410,6 +422,148 @@ header nav a:focus {
 .contactHeader {
   background: url(../assets/contact-header-1.jpg);
   height: 100vh;
+}
+
+.button {
+  margin: 50px 0;
+}
+.button a {
+  font-family: "Tulpen One", cursive;
+  font-size: 30px;
+  background: #BF2603;
+  padding: 10px 40px;
+  margin: 20px 0;
+}
+
+.about {
+  height: 80vh;
+}
+.about .aboutFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10vh 0;
+}
+.about .aboutFlexContent {
+  width: 30vw;
+  padding: 20px 0;
+}
+
+.planAhead {
+  height: 100vh;
+  background: #220303;
+}
+.planAhead .planAheadFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15vh 0;
+}
+.planAhead .planAheadFlexContent {
+  width: 30vw;
+  height: 40vh;
+}
+.planAhead .planAheadFlexContent2 {
+  text-align: right;
+}
+.planAhead .planAheadFlexImg {
+  width: 30vw;
+}
+.planAhead .planAheadFlexImg1 {
+  -webkit-box-shadow: 20px 20px #FF8327;
+          box-shadow: 20px 20px #FF8327;
+}
+.planAhead .planAheadFlexImg2 {
+  -webkit-box-shadow: -20px 20px #FF8327;
+          box-shadow: -20px 20px #FF8327;
+}
+
+.party1 {
+  height: 55vh;
+}
+.party1 .wrapper {
+  width: 60%;
+  padding: 10vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.party1 .wrapper h3 {
+  color: #FF8327;
+}
+.party1 .wrapper p {
+  text-align: justify;
+}
+
+.party2 {
+  height: 55vh;
+  background: url(../assets/banner-image.jpg);
+}
+
+.events {
+  height: 55vh;
+}
+.events .wrapper {
+  padding: 10vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.events .wrapper img {
+  -webkit-box-shadow: -20px 20px #FF8327;
+          box-shadow: -20px 20px #FF8327;
+}
+.events .wrapper .eventsTextContainer {
+  padding-left: 5vw;
+}
+.events .wrapper .eventsTextContainer h3 {
+  color: #FF8327;
+}
+
+.gallery {
+  height: 60vh;
+  background: #220303;
+}
+.gallery .galleryFlex {
+  padding: 10vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.gallery .galleryFlex img {
+  width: 40vh;
 }
 
 footer {
