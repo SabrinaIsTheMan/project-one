@@ -13,7 +13,6 @@
 }
 
 // ABOUT SECTION
-    // TO DO - ICONS
 
 .about {
     height: 80vh;
@@ -29,7 +28,40 @@
     .aboutFlexContent{
         width: 30vw;
         padding: 20px 0;
+
+        p {
+            margin-left: calc(35px + 10px);
+        }
     }
+}
+
+// I downloaded the icons from FontAwesome as SVGs, then opened the file in VSCode and added fill="#FFFFFF" to path (probably not the best way to do this, but this works for as a PSD conversion)
+.aboutFlexContent h3::before {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    background: $color3;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.aboutFlexContent1 h3::before {
+    content: url(../assets/house-solid.svg);
+}
+
+.aboutFlexContent2 h3::before {
+    content: url(../assets/users-solid.svg);
+}
+
+.aboutFlexContent3 h3::before {
+    content: url(../assets/file-solid.svg);
+}
+
+.aboutFlexContent4 h3::before {
+    content: url(../assets/phone-flip-solid.svg);
 }
 
 // PLAN AHEAD SECTION

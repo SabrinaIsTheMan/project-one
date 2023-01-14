@@ -456,6 +456,43 @@ header nav a:focus {
   width: 30vw;
   padding: 20px 0;
 }
+.about .aboutFlexContent p {
+  margin-left: 45px;
+}
+
+.aboutFlexContent h3::before {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.5rem;
+  background: #BF2603;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.aboutFlexContent1 h3::before {
+  content: url(../assets/house-solid.svg);
+}
+
+.aboutFlexContent2 h3::before {
+  content: url(../assets/users-solid.svg);
+}
+
+.aboutFlexContent3 h3::before {
+  content: url(../assets/file-solid.svg);
+}
+
+.aboutFlexContent4 h3::before {
+  content: url(../assets/phone-flip-solid.svg);
+}
 
 .planAhead {
   height: 100vh;
