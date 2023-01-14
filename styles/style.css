@@ -233,7 +233,7 @@ html {
 }
 
 .wrapper {
-  width: 90%;
+  width: 95%;
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -436,7 +436,7 @@ header nav a:focus {
 }
 
 .about {
-  height: 80vh;
+  height: 70vh;
 }
 .about .aboutFlex {
   display: -webkit-box;
@@ -453,11 +453,11 @@ header nav a:focus {
   padding: 10vh 0;
 }
 .about .aboutFlexContent {
-  width: 30vw;
-  padding: 20px 0;
+  width: 35vw;
+  padding: 10px 0;
 }
 .about .aboutFlexContent p {
-  margin-left: 45px;
+  margin-left: 60px;
 }
 
 .aboutFlexContent h3::before {
@@ -472,10 +472,10 @@ header nav a:focus {
           align-items: center;
   margin-right: 0.5rem;
   background: #BF2603;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  padding: 10px;
+  padding: 15px;
 }
 
 .aboutFlexContent1 h3::before {
@@ -510,25 +510,34 @@ header nav a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15vh 0;
+  padding: 5vh 0;
 }
 .planAhead .planAheadFlexContent {
   width: 30vw;
   height: 40vh;
 }
-.planAhead .planAheadFlexContent2 {
+.planAhead p {
+  text-align: left;
+}
+.planAhead .planAheadFlexContent2, .planAhead .planAheadFlexContent2 .button {
   text-align: right;
 }
 .planAhead .planAheadFlexImg {
-  width: 30vw;
+  width: 40vw;
 }
 .planAhead .planAheadFlexImg1 {
   -webkit-box-shadow: 20px 20px #FF8327;
           box-shadow: 20px 20px #FF8327;
+  position: relative;
+  left: -15vw;
+  top: -10vh;
 }
 .planAhead .planAheadFlexImg2 {
   -webkit-box-shadow: -20px 20px #FF8327;
           box-shadow: -20px 20px #FF8327;
+  position: relative;
+  right: -15vw;
+  bottom: -10vh;
 }
 
 .party1 {
