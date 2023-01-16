@@ -1,0 +1,50 @@
+.blogHeader {
+    height: 70vh;
+}
+
+.blogPageFlex {
+    display: flex;
+
+}
+
+// SIDEBAR
+.sidebar {
+    width: 22vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    padding: 20px;
+    background: $color1;
+
+    .sidebarImgContainer {
+        width: 25vw;
+        position: relative;
+        right: calc(5vw + 20px);
+        bottom: 40px;
+    }
+
+    li {
+        color: $color3;
+        list-style: inside;
+
+        p {
+            display: inline-block;
+            font-size: 28px;
+        }
+    }
+}
+
+// BLOG POST
+
+.blogPostFlex {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.blogPost {
+    border: 2px solid $color2;
+}

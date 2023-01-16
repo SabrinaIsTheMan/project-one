@@ -38,76 +38,107 @@
         </div> <!-- .wrapper END -->
     </header>
 
-    <!-- sidebar - use aside semantic element instead -->
-    <aside class="sidebar" id="sidebar">
-        <div class="wrapper">
-            <img src="./assets/sidebar-image.jpg" alt="beer glass being filled at the tap">
-            <h3>Our mission</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas praesentium quidem nobis.<br><a href="">Find out more.</a></p>
-            <h3>Recent Posts</h3>
-            <ul>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
-            </ul>
-        </div> <!-- .wrapper END -->
-    </aside>
+    <!-- flexbox to hold both aside and blogpost column -->
+    <div class="blogPageFlex">
 
-    <!-- blog post -->
-    <section class="blogPost" id="blogPost">
-        <div class="wrapper">
-            <img src="./assets/post-image.jpg" alt="dinner spread">
-            <div class="blogPostTextContainer">
-                <h3>New Menu!</h3>
-                <h4>Monday January, 2023 by Saron</h4>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, repellendus magnam vel odit quidem harum facilis fugiat nihil corrupti illum optio recusandae vitae ex exercitationem consequatur, eum rerum, iure accusantium?
-                Aperiam, earum. Non corporis nihil similique ipsa rerum quas ipsum, qui deleniti, ex quia nisi odio? Esse, dolorem soluta tenetur repellat eius harum minima molestiae debitis omnis sequi magni quaerat.
-                Enim eveniet mollitia natus ipsum? Blanditiis inventore amet consequatur quos possimus ullam fugit, tempora doloremque nulla explicabo nemo quia, labore facilis nam aspernatur reprehenderit provident, esse fuga exercitationem impedit. Consequuntur.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, provident eius minima deleniti modi ab accusantium atque! Dignissimos quis quidem itaque dicta, dolores deleniti quasi rem harum eaque, reprehenderit ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut excepturi saepe libero ipsa modi iure minus error dolore ipsum, quas ullam consequatur porro quidem, accusamus eaque harum? Laudantium, est mollitia.
-                Perferendis minima quod maiores, deserunt atque ex, tenetur neque est adipisci ipsa expedita at repudiandae rem voluptatibus pariatur saepe blanditiis similique aperiam dignissimos amet modi dicta magni. Quia, hic maxime.
-                </p>
-            </div>
-        </div>
-    </section>
+        <!-- sidebar - use aside semantic element instead -->
+        <aside class="sidebar" id="sidebar">
+            <div class="wrapper">
+                <div class="sidebarImgContainer">
+                    <img src="./assets/sidebar-image.jpg" alt="beer glass being filled at the tap">
+                </div>
+                <h3>Our mission</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas praesentium quidem nobis. <a
+                        href="#about">Find out more.</a></p>
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li>
+                        <p>Lorem ipsum dolor sit</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit</p>
+                    </li>
+                </ul>
+            </div> <!-- .wrapper END -->
+        </aside>
 
-    <!-- comments section -->
-    <section class="comments" id="comments">
-       <div class="wrapper">
-            <h3>Comments:</h3>
-            <div class="commentsFlex">
-                <div class="commentsBox">
-                    <img src="./assets/comment-image-1.jpg" alt="icon of woman">
-                    <div class="comentsBoxTextContainer">
-                        <h4>Tuesday February 24, 2023 by Sulaire</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum velit fuga, ullam quaerat et doloribus quas repellendus sapiente veritatis!</p>
+        <!-- blogpost + comments + form in one column -->
+        <div class="blogPostFlex">
+            <!-- blog post -->
+            <section class="blogPost" id="blogPost">
+                <div class="wrapper">
+                    <img src="./assets/post-image.jpg" alt="dinner spread">
+                    <div class="blogPostTextContainer">
+                        <h3>New Menu!</h3>
+                        <h4>Monday January, 2023 by Saron</h4>
+                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, repellendus magnam vel odit quidem
+                            harum facilis fugiat nihil corrupti illum optio recusandae vitae ex exercitationem consequatur, eum
+                            rerum, iure accusantium?
+                            Aperiam, earum. Non corporis nihil similique ipsa rerum quas ipsum, qui deleniti, ex quia nisi odio?
+                            Esse, dolorem soluta tenetur repellat eius harum minima molestiae debitis omnis sequi magni quaerat.
+                            Enim eveniet mollitia natus ipsum? Blanditiis inventore amet consequatur quos possimus ullam fugit,
+                            tempora doloremque nulla explicabo nemo quia, labore facilis nam aspernatur reprehenderit provident,
+                            esse fuga exercitationem impedit. Consequuntur.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, provident eius minima deleniti
+                            modi ab accusantium atque! Dignissimos quis quidem itaque dicta, dolores deleniti quasi rem harum eaque,
+                            reprehenderit ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut excepturi saepe libero
+                            ipsa modi iure minus error dolore ipsum, quas ullam consequatur porro quidem, accusamus eaque harum?
+                            Laudantium, est mollitia.
+                            Perferendis minima quod maiores, deserunt atque ex, tenetur neque est adipisci ipsa expedita at
+                            repudiandae rem voluptatibus pariatur saepe blanditiis similique aperiam dignissimos amet modi dicta
+                            magni. Quia, hic maxime.
+                        </p>
                     </div>
                 </div>
+            </section>
+        
+            <!-- comments section -->
+            <section class="comments" id="comments">
+                <div class="wrapper">
+                    <h3>Comments:</h3>
+                    <div class="commentsFlex">
+                        <div class="commentsBox">
+                            <img src="./assets/comment-image-1.jpg" alt="icon of woman">
+                            <div class="comentsBoxTextContainer">
+                                <h4>Tuesday February 24, 2023 by Sulaire</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum velit fuga, ullam
+                                    quaerat et doloribus quas repellendus sapiente veritatis!</p>
+                            </div>
+                        </div>
 
-                <div class="commentsBox">
-                    <img src="./assets/comment-image-2.jpg" alt="icon of man">
-                    <div class="comentsBoxTextContainer">
-                        <h4>Wednesday March 10, 2023 by Renzo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum velit fuga, ullam quaerat et doloribus quas repellendus sapiente veritatis!</p>
-                    </div>
-                </div>
-            </div> <!-- .commentsFlex END -->
+                        <div class="commentsBox">
+                            <img src="./assets/comment-image-2.jpg" alt="icon of man">
+                            <div class="comentsBoxTextContainer">
+                                <h4>Wednesday March 10, 2023 by Renzo</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum velit fuga, ullam
+                                    quaerat et doloribus quas repellendus sapiente veritatis!</p>
+                            </div>
+                        </div>
+                    </div> <!-- .commentsFlex END -->
 
-            <form action="" class="blogForm" name="blogForm">
-            
-                <label for="name" class="sr-only"></label>
-                <input type="text" id="name" placeholder="Name">
-            
-                <label for="email" class="sr-only"></label>
-                <input type="email" id="email" placeholder="Email">
-            
-                <label for="message" class="sr-only"></label>
-                <textarea name="message" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
-            
-                <button type="submit">Post Comment</button>
-            </form> <!-- .blogForm END -->
-       </div> <!-- .wrapper END -->
-    </section>
+                    <form action="" class="blogForm" name="blogForm">
+
+                        <label for="name" class="sr-only"></label>
+                        <input type="text" id="name" placeholder="Name">
+
+                        <label for="email" class="sr-only"></label>
+                        <input type="email" id="email" placeholder="Email">
+
+                        <label for="message" class="sr-only"></label>
+                        <textarea name="message" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+
+                        <button type="submit">Post Comment</button>
+                    </form> <!-- .blogForm END -->
+                </div> <!-- .wrapper END -->
+            </section>
+        </div><!-- .blogPostFlex END -->
+    </div> <!-- .blogPageFlex END -->
 
     <!-- footer -->
     <footer>

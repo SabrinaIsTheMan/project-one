@@ -411,7 +411,7 @@ header nav a:focus {
 }
 
 .pageHeaderTextContainer {
-  height: 30vh;
+  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,7 +626,7 @@ header nav a:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10vh 0;
-  height: 70vh;
+  height: 75vh;
 }
 
 .contactInfo {
@@ -736,6 +736,62 @@ button {
   background: #BF2603;
   border: none;
   padding: 10px 40px;
+}
+
+.blogHeader {
+  height: 70vh;
+}
+
+.blogPageFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar {
+  width: 22vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 5vw;
+  margin-top: 10vh;
+  padding: 20px;
+  background: #220303;
+}
+.sidebar .sidebarImgContainer {
+  width: 25vw;
+  position: relative;
+  right: calc(5vw + 20px);
+  bottom: 40px;
+}
+.sidebar li {
+  color: #BF2603;
+  list-style: inside;
+}
+.sidebar li p {
+  display: inline-block;
+  font-size: 28px;
+}
+
+.blogPostFlex {
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+}
+
+.blogPost {
+  border: 2px solid #FF8327;
 }
 
 footer {
