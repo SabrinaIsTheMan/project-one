@@ -1,0 +1,83 @@
+.contactFlex{
+    display: flex;
+    justify-content: space-between;
+    padding: 10vh 0;
+    height: 70vh;
+
+}
+
+// CONTACT INFO
+.contactInfo{
+    width: 22vw;
+}
+
+.contactInfoBlock1{
+    width: 10vw;
+    padding: 5vh 0;
+
+    .socialIcons {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.25rem;
+        padding: 2vh 0;
+    }
+}
+
+// CONTACT FORM
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    display: wrap;
+    background: $color1;
+    width: 60vw;
+    padding: 5vh 5vw;
+    box-shadow: 20px 20px $color2;
+    position: relative;
+    left: 5vw;
+    bottom: 22vh;
+
+}
+
+input,
+textarea {
+    padding: 0 0 10px 5px;
+    border: none;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    color: $white;
+    font-family: $bodyFont;
+    background-color: $color1;
+
+    &::placeholder {
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+            color: $white;
+            opacity: 1;
+    }
+}
+
+input {
+    border-bottom: 2px solid $white;
+    width: 48%;
+
+}
+
+.formRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    min-height: 130px;
+    border: 2px solid $white;
+}
+
+button {
+    margin: 10px 0;
+    font-family: $logoFont;
+    font-size: 35px;
+    color: $white;
+    background: $color3;
+    border: none;
+    padding: 10px 40px;
+}

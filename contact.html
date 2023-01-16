@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 - Bar One (Contact)</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/bae09f409a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
         </div>
     </nav>
 
-    <!-- top nav + h2 -->
+    <!-- h2 -->
     <header class="contactHeader">
         <div class="wrapper">
             <div class="pageHeaderTextContainer">
@@ -37,36 +38,54 @@
         </div> <!-- .wrapper END -->
     </header>
 
-    <!-- contact info -->
-    <section class="contactInfo" id="contactInfo">
-        <div class="wrapper">
-            <!-- 4 icons -->
-            <p>info@email.com</p>
-            <p>123 - 456 - 7890</p>
-            <p>123 Queen Street West, Unit 10<br>
-                Toronto, Ontario<br>
-                M5V 2D5</p>
-        </div> <!-- .wrapper END -->
-    </section>
+    <!-- contact info + form in flexbox -->
 
-    <!-- form -->
-    <section class="form" id="form">
-        <div class="wrapper">
-            <form action="" class="contactForm" name="contactForm">
+    <div class="wrapper">
+        <div class="contactFlex">
 
-                <label for="name" class="sr-only"></label>
-                <input type="text" id="name" placeholder="Name">
-                
-                <label for="email" class="sr-only"></label>
-                <input type="email" id="email" placeholder="Email">
-                
-                <label for="message" class="sr-only"></label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                
-                <button type="submit">Submit</button>
-            </form> <!-- .contactForm END -->
-        </div> <!-- .wrapper END -->
-    </section>
+                <!-- contact info -->
+                <section class="contactInfo" id="contactInfo">
+                    <div class="wrapper">
+                        <div class="contactInfoBlock1">
+                            <div class="socialIcons">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <p>info@email.com</p>
+                        </div>
+                        
+                        <div class="contactInfoBlock2">
+                            <p>123 - 456 - 7890</p>
+                            <p>123 Queen Street West, Unit 10<br>
+                                Toronto, Ontario<br>
+                                M5V 2D5</p>
+                        </div>
+                    </div> <!-- .wrapper END -->
+                </section>
+
+                <!-- form -->
+                <section class="form" id="form">
+                    <div class="wrapper">
+                        <form action="" class="contactForm" name="contactForm">
+                            <div class="formRow">
+                                <label for="name" class="sr-only"></label>
+                                <input type="text" id="name" placeholder="Name">
+
+                                <label for="email" class="sr-only"></label>
+                                <input type="email" id="email" placeholder="Email Address">
+                            </div>
+                            
+                            <label for="message" class="sr-only"></label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                            
+                            <button type="submit">Submit</button>
+                        </form> <!-- .contactForm END -->
+                    </div> <!-- .wrapper END -->
+                </section>
+        </div> <!-- .contactFlex END -->
+    </div> <!-- .wrapper END -->
 
     <!-- footer -->
     <footer>
