@@ -667,7 +667,7 @@ header nav a:focus {
   bottom: 22vh;
 }
 
-input,
+.form input,
 textarea {
   padding: 0 0 10px 5px;
   border: none;
@@ -677,31 +677,31 @@ textarea {
   font-family: "Chathura", san-serif;
   background-color: #220303;
 }
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+.form input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: #FFFFFF;
   opacity: 1;
 }
-input::-moz-placeholder, textarea::-moz-placeholder {
+.form input::-moz-placeholder, textarea::-moz-placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: #FFFFFF;
   opacity: 1;
 }
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+.form input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: #FFFFFF;
   opacity: 1;
 }
-input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+.form input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: #FFFFFF;
   opacity: 1;
 }
-input::placeholder,
+.form input::placeholder,
 textarea::placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
@@ -709,12 +709,12 @@ textarea::placeholder {
   opacity: 1;
 }
 
-input {
+.form input {
   border-bottom: 2px solid #FFFFFF;
   width: 48%;
 }
 
-.formRow {
+.contactFormRow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -723,12 +723,12 @@ input {
           justify-content: space-between;
 }
 
-textarea {
+.contactForm textarea {
   min-height: 130px;
   border: 2px solid #FFFFFF;
 }
 
-button {
+.contactForm button {
   margin: 10px 0;
   font-family: "Tulpen One", cursive;
   font-size: 35px;
@@ -766,8 +766,11 @@ button {
 .sidebar .sidebarImgContainer {
   width: 25vw;
   position: relative;
-  right: calc(5vw + 20px);
+  right: calc(5vw + 30px);
   bottom: 40px;
+}
+.sidebar a {
+  color: #FF8327;
 }
 .sidebar li {
   color: #BF2603;
@@ -779,7 +782,7 @@ button {
 }
 
 .blogPostFlex {
-  width: 50vw;
+  width: 60vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -791,7 +794,133 @@ button {
 }
 
 .blogPost {
+  border-left: 2px solid #FF8327;
+  border-bottom: 2px solid #FF8327;
+}
+.blogPost img {
+  -webkit-box-shadow: -20px 20px #FF8327;
+          box-shadow: -20px 20px #FF8327;
+  position: relative;
+  top: -10vh;
+  left: -5px;
+}
+.blogPost .blogPostTextContainer {
+  margin: 20px;
+  padding: 0 50px 50px;
+}
+.blogPost p {
+  padding-bottom: 20px;
+}
+
+.comments {
+  padding: 10vh 5vw 5vh 0;
+}
+
+.commentsFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 50px;
+}
+.commentsFlex .commentsFlexTextContainer h4 {
+  font-size: 36px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.commentsFlex .commentsFlexImgContainer {
+  width: 30vw;
+  padding-top: 10px;
+}
+
+.blogForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #111010;
+  width: auto;
+  padding-bottom: 10vh;
+}
+
+.blogForm input,
+textarea {
+  padding: 0 0 10px 5px;
+  border: none;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  font-family: "Chathura", san-serif;
+  background-color: #111010;
+}
+.blogForm input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.blogForm input::-moz-placeholder, textarea::-moz-placeholder {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.blogForm input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.blogForm input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.blogForm input::placeholder,
+textarea::placeholder {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.blogForm input {
+  border-bottom: 2px solid #FF8327;
+  width: 48%;
+}
+
+.blogFormRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogForm textarea {
+  min-height: 130px;
   border: 2px solid #FF8327;
+}
+
+.blogForm button {
+  margin: 10px 0;
+  font-family: "Tulpen One", cursive;
+  font-size: 35px;
+  color: #FFFFFF;
+  background: #BF2603;
+  border: none;
+  padding: 10px 40px;
 }
 
 footer {
