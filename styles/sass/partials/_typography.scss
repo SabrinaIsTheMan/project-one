@@ -8,14 +8,14 @@ h1 {
     font-family: $logoFont;
     font-weight: 400;
     color: $color2;
-    font-size: 261.4px;
-    letter-spacing: 2.4px;
+    font-size: 13.07rem;
+    letter-spacing: 0.12rem;
 }
 
 h2{
-    font-size: 83.2px;
-    line-height: 94.7px;
-    letter-spacing: 2.6px;
+    font-size: 4.16rem;
+    line-height: 4.735rem;
+    letter-spacing: 0.13rem;
     font-weight: 700;
 }
 
@@ -24,16 +24,16 @@ h1, h2 {
 }
 
 h3 {
-    font-size: 68px;
-    line-height: 58px;
-    letter-spacing: 2.2px;
+    font-size: 3.4rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.11rem;
     font-weight: 700;
     margin: 10px 0;
 }
 
 h4 {
     color: $color2;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 700;
     margin: 10px 0;
 
@@ -41,8 +41,8 @@ h4 {
 
 p {
     color: $white;
-    font-size: 39px;
-    line-height: 30px;
-    letter-spacing: 1.9px;
+    font-size: 1.95rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.45rem;
     margin: 0;
 }

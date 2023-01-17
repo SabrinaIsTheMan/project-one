@@ -1,7 +1,7 @@
 // NAV
 
 nav{
-    font-size: 38px;
+    font-size: 1.9rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -27,7 +27,7 @@ nav{
 
         li:nth-child(3) {
             font-family: $logoFont;
-            font-size: 60px;
+            font-size: 3rem;
             text-transform: none;
         }
     }
