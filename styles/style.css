@@ -233,7 +233,7 @@ html {
 }
 
 .wrapper {
-  width: 95%;
+  width: 90%;
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -290,13 +290,13 @@ h1 {
   font-weight: 400;
   color: #FF8327;
   font-size: 13.07rem;
-  letter-spacing: 0.12rem;
+  letter-spacing: 2.4px;
 }
 
 h2 {
   font-size: 4.16rem;
   line-height: 4.735rem;
-  letter-spacing: 0.13rem;
+  letter-spacing: 2.6px;
   font-weight: 700;
 }
 
@@ -307,7 +307,7 @@ h1, h2 {
 h3 {
   font-size: 3.4rem;
   line-height: 2.9rem;
-  letter-spacing: 0.11rem;
+  letter-spacing: 2.2px;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -323,7 +323,7 @@ p {
   color: #FFFFFF;
   font-size: 1.95rem;
   line-height: 1.5rem;
-  letter-spacing: 0.45rem;
+  letter-spacing: 1.9px;
   margin: 0;
 }
 
@@ -375,6 +375,8 @@ header nav a:focus {
 
 .indexHeader {
   background: url(../assets/home-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 90vh;
 }
 .indexHeader .titleContainer {
@@ -407,6 +409,8 @@ header nav a:focus {
 
 .blogHeader {
   background: url(../assets/blog-header-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -425,6 +429,8 @@ header nav a:focus {
 
 .contactHeader {
   background: url(../assets/contact-header-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 60vh;
 }
 
@@ -440,9 +446,10 @@ header nav a:focus {
 }
 
 .about {
-  height: 70vh;
+  height: 100%;
 }
 .about .aboutFlex {
+  width: 80vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,10 +506,11 @@ header nav a:focus {
 }
 
 .planAhead {
-  height: 100vh;
+  height: 100%;
   background: #220303;
 }
 .planAhead .planAheadFlex {
+  width: 80vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,7 +531,7 @@ header nav a:focus {
 .planAhead p {
   text-align: left;
 }
-.planAhead .planAheadFlexContent2, .planAhead .planAheadFlexContent2 .button {
+.planAhead .planAheadFlexContent2 .button {
   text-align: right;
 }
 .planAhead .planAheadFlexImg {
@@ -547,7 +555,7 @@ header nav a:focus {
 }
 
 .party1 {
-  height: 55vh;
+  height: 100%;
 }
 .party1 .wrapper {
   width: 60%;
@@ -576,10 +584,12 @@ header nav a:focus {
 .party2 {
   height: 55vh;
   background: url(../assets/banner-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .events {
-  height: 55vh;
+  height: 100%;
 }
 .events .wrapper {
   padding: 10vh 0;
@@ -599,11 +609,12 @@ header nav a:focus {
 }
 
 .gallery {
-  height: 60vh;
+  height: 100%;
   background: #220303;
 }
 .gallery .galleryFlex {
   padding: 10vh 0;
+  width: 80vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -615,7 +626,7 @@ header nav a:focus {
           align-items: center;
 }
 .gallery .galleryFlex img {
-  width: 40vh;
+  width: 30%;
 }
 
 .contactFlex {
@@ -668,7 +679,7 @@ header nav a:focus {
 }
 
 .form input,
-textarea {
+.form textarea {
   padding: 0 0 10px 5px;
   border: none;
   margin-bottom: 40px;
@@ -677,32 +688,32 @@ textarea {
   font-family: "Chathura", san-serif;
   background-color: #220303;
 }
-.form input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: #FFFFFF;
   opacity: 1;
 }
-.form input::-moz-placeholder, textarea::-moz-placeholder {
+.form input::-moz-placeholder, .form textarea::-moz-placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: #FFFFFF;
   opacity: 1;
 }
-.form input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+.form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: #FFFFFF;
   opacity: 1;
 }
-.form input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+.form input::-ms-input-placeholder, .form textarea::-ms-input-placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: #FFFFFF;
   opacity: 1;
 }
 .form input::placeholder,
-textarea::placeholder {
+.form textarea::placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: #FFFFFF;
@@ -853,7 +864,7 @@ textarea::placeholder {
 }
 
 .blogForm input,
-textarea {
+.blogForm textarea {
   padding: 0 0 10px 5px;
   border: none;
   margin-bottom: 40px;
@@ -862,32 +873,32 @@ textarea {
   font-family: "Chathura", san-serif;
   background-color: #111010;
 }
-.blogForm input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+.blogForm input::-webkit-input-placeholder, .blogForm textarea::-webkit-input-placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: #FFFFFF;
   opacity: 1;
 }
-.blogForm input::-moz-placeholder, textarea::-moz-placeholder {
+.blogForm input::-moz-placeholder, .blogForm textarea::-moz-placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: #FFFFFF;
   opacity: 1;
 }
-.blogForm input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+.blogForm input:-ms-input-placeholder, .blogForm textarea:-ms-input-placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: #FFFFFF;
   opacity: 1;
 }
-.blogForm input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+.blogForm input::-ms-input-placeholder, .blogForm textarea::-ms-input-placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: #FFFFFF;
   opacity: 1;
 }
 .blogForm input::placeholder,
-textarea::placeholder {
+.blogForm textarea::placeholder {
   font-size: 1.5rem;
   letter-spacing: 3px;
   color: #FFFFFF;
@@ -932,4 +943,96 @@ footer p {
   margin-bottom: 0;
   font-size: 1.5rem;
   text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 960px) {
+  .indexHeaderImg {
+    display: none;
+  }
+  .aboutFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutFlex .aboutFlexContent {
+    width: 80vw;
+  }
+  .planAhead {
+    height: 100%;
+  }
+  .planAhead .planAheadFlex {
+    width: 80vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .planAhead .planAheadFlexContent {
+    width: 80vw;
+    height: 100%;
+    text-align: center;
+    padding-top: 2.5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .planAhead .planAheadFlexImg {
+    width: 80vw;
+  }
+  .planAhead .planAheadFlexImg1,
+.planAhead .planAheadFlexImg2 {
+    position: static;
+  }
+  .planAhead .planAheadFlexContent2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .party1 .wrapper {
+    padding: 5vh 0;
+  }
+  .party2 {
+    height: 20vh;
+    background-position: right center;
+  }
+  .events .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5vh 0;
+  }
+  .events .wrapper img {
+    width: 60vw;
+  }
+  .events .wrapper .eventsTextContainer {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 40px;
+  }
+  .galleryFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .galleryFlex img {
+    width: 120%;
+    padding: 2.5vh 0;
+  }
 }
