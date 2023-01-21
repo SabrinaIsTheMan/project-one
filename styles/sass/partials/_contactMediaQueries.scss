@@ -1,14 +1,44 @@
-//  Extra small devices (phones, 600px and down)
- @media (max-width: 600px) {
-     
- }
+@media (min-width: 320px) and (max-width: 960px) {
+    .contactHeader{
+        height: 40vh;
+    }
 
- // Small devices (portrait tablets and large phones, 600px and up)
- @media (min-width: 600px) {
-     
- }
+    .pageHeaderTextContainer {
+        height: 20vh;
+    }
+    
+    .contactFlex{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        width: 80vw;
+    }
 
- // Medium devices (landscape tablets, 768px and up)
- @media (min-width: 768px) {
-     
- }
+    .contactInfo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        width: 80vw;
+        height: 12vh;
+    }
+
+    .contactInfoBlock{
+        padding: 0;
+    }
+
+    .socialIcons{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        order: 1;
+        width: auto;
+        height: 12vh;
+    }
+
+    .contactForm {
+        position: static;
+        width: 80vw;
+        margin-right: 50px;
+    }
+}

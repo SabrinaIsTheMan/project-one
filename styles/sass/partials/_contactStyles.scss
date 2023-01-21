@@ -2,24 +2,20 @@
     display: flex;
     justify-content: space-between;
     padding: 10vh 0;
-    height: 75vh;
+    height: auto;
 
 }
 
 // CONTACT INFO
 .contactInfo{
-    width: 22vw;
-}
-
-.contactInfoBlock1{
-    width: 10vw;
-    padding: 5vh 0;
+    width: 22vw;    
 
     .socialIcons {
         display: flex;
         justify-content: space-between;
         font-size: 1.25rem;
         padding: 2vh 0;
+        width: 10vw;
     }
 }
 

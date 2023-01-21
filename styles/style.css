@@ -366,8 +366,8 @@ nav ul li:nth-child(3) {
   text-transform: none;
 }
 
-header nav a:hover,
-header nav a:focus {
+nav a:hover,
+nav a:focus {
   color: #FF8327;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -637,18 +637,13 @@ header nav a:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10vh 0;
-  height: 75vh;
+  height: auto;
 }
 
 .contactInfo {
   width: 22vw;
 }
-
-.contactInfoBlock1 {
-  width: 10vw;
-  padding: 5vh 0;
-}
-.contactInfoBlock1 .socialIcons {
+.contactInfo .socialIcons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,6 +652,7 @@ header nav a:focus {
           justify-content: space-between;
   font-size: 1.25rem;
   padding: 2vh 0;
+  width: 10vw;
 }
 
 .contactForm {
@@ -937,12 +933,12 @@ header nav a:focus {
 footer {
   background: #222222;
   color: #FFFFFF;
-  height: 5vh;
+  height: 100%;
 }
 footer p {
-  margin-bottom: 0;
   font-size: 1.5rem;
   text-align: center;
+  padding: 5px 0;
 }
 
 @media (min-width: 320px) and (max-width: 960px) {
@@ -954,12 +950,10 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .aboutFlex .aboutFlexContent {
     width: 80vw;
+    margin-left: 50px;
   }
   .planAhead {
     height: 100%;
@@ -970,6 +964,7 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 50px;
   }
   .planAhead .planAheadFlexContent {
     width: 80vw;
@@ -988,11 +983,17 @@ footer p {
             align-items: center;
   }
   .planAhead .planAheadFlexImg {
-    width: 80vw;
+    width: auto;
   }
-  .planAhead .planAheadFlexImg1,
-.planAhead .planAheadFlexImg2 {
+  .planAhead .planAheadFlexImg1 {
     position: static;
+    -webkit-box-shadow: 20px 20px #FF8327;
+            box-shadow: 20px 20px #FF8327;
+  }
+  .planAhead .planAheadFlexImg2 {
+    position: static;
+    -webkit-box-shadow: -20px 20px #FF8327;
+            box-shadow: -20px 20px #FF8327;
   }
   .planAhead .planAheadFlexContent2 {
     -webkit-box-ordinal-group: 2;
@@ -1034,5 +1035,113 @@ footer p {
   .galleryFlex img {
     width: 120%;
     padding: 2.5vh 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 960px) {
+  .contactHeader {
+    height: 40vh;
+  }
+  .pageHeaderTextContainer {
+    height: 20vh;
+  }
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0;
+    width: 80vw;
+  }
+  .contactInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px;
+    width: 80vw;
+    height: 12vh;
+  }
+  .contactInfoBlock {
+    padding: 0;
+  }
+  .socialIcons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: auto;
+    height: 12vh;
+  }
+  .contactForm {
+    position: static;
+    width: 80vw;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 320px) and (max-width: 960px) {
+  .blogHeader {
+    height: 40vh;
+  }
+  .blogPageFlex {
+    display: inline;
+  }
+  .sidebar {
+    height: auto;
+    width: 80vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 50px auto;
+  }
+  .sidebar .sidebarImgContainer {
+    position: static;
+    width: 40vw;
+  }
+  .blogPostFlex {
+    width: 80vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .blogPost {
+    border: 2px solid #FF8327;
+  }
+  .blogPost img {
+    position: static;
+  }
+  .comments {
+    padding: 2vh 0;
+  }
+  .commentsFlex {
+    padding-bottom: 2vh;
+    width: 80vw;
+  }
+  .commentsFlex .commentsFlexImgContainer {
+    padding-right: 10px;
+  }
+  .blogForm {
+    padding-bottom: 2vh;
   }
 }
